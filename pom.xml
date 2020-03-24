@@ -58,6 +58,12 @@
             <version>0.5.3.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>axios</artifactId>
+            <version>0.19.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>

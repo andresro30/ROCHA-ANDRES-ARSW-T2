@@ -29,7 +29,7 @@ public class AirportFinderServicesImp implements AirportFinderServices {
 
 
     public AirportFinderServicesImp(){
-        url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-radius";
+        url = "https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-text?text=";
         apiHost  = "cometari-airportsfinder-v1.p.rapidapi.com";
         apiKey = "80100ea453mshcd0d35d8235246bp102f71jsnf315f9368589";
     }
