@@ -15,8 +15,11 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="css/style.css"></script>
     <script src="js/apiClient.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
+
 </head>
 <h1 class="display-4" style="margin-left: 120px;margin-top:20px">Airports Finder Tool</h1>
 
@@ -24,10 +27,9 @@
 <div class="container">
     <p>
         City: <input id="city" type="text">
-        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary" onclick="app.getAirportsByName(city.value)">Search</button>
     </p>
-
-    <table id="table"  class="table">
+    <table class="table">
         <thead>
         <tr>
         <thead>
@@ -40,10 +42,15 @@
         </thead>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="table">
         <!-- Se generan datos con los js -->
         </tbody>
     </table>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+
 </div>
 
 </body>
